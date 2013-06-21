@@ -8,7 +8,7 @@ DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL', 'postgres://localhost/rbgschool'))
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 # Local time zone for this installation. Choices can be found here:
