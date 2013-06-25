@@ -21,15 +21,18 @@
 .navbar-inner {
     #gradient > .vertical(@themeColor, @themeSecondary);
     .nav {
-        .sibling {
+        li {
             a {
                 .buttonLinkColor(@themeColor);
+                text-shadow: none;
             }
         }
         .active {
             a {
                 background-color: @themeColor !important;
                 .buttonLinkColor(@themeColor);
+                font-weight: bold;
+                .box-shadow(0 3px 8px rgba(0,0,0,0.35) inset);
             }
         }
     }
@@ -46,5 +49,23 @@
     ul {
         list-style: none;
         margin-left: 0px;
+    }
+}
+
+/* cms-specific */
+
+.nav-stacked {
+    li {
+        a:hover {
+            background-color: fadeout(@themeColor, 95%);
+        }
+    }
+    .active {
+        a {
+            background-color: fadeout(@themeColor, 95%);
+        }
+        a:hover {
+            background-color: fadeout(@themeColor, 95%);
+        }
     }
 }
