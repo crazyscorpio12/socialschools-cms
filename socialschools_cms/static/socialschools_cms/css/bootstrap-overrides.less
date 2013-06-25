@@ -1,0 +1,50 @@
+/* Overrides for bootstrap classes */
+
+/* overrides primary button colors to match theme */
+
+.btn-primary {
+    .buttonBackground(@themeColor, @themeSecondary);
+    .buttonLinkColor(@themeColor);
+    &.active {
+      .buttonLinkColor(@themeColor);
+    }
+}
+
+.btn-primary:hover {
+    .buttonLinkHoverColor(@themeColor);
+}
+
+.btn-success {
+    .buttonBackground(lighten(#52b42b, 10%), #52b42b);
+}
+
+.navbar-inner {
+    #gradient > .vertical(@themeColor, @themeSecondary);
+    .nav {
+        .sibling {
+            a {
+                .buttonLinkColor(@themeColor);
+            }
+        }
+        .active {
+            a {
+                background-color: @themeColor !important;
+                .buttonLinkColor(@themeColor);
+            }
+        }
+    }
+}
+
+
+
+.form-actions {
+    background: none;
+    border: 0;
+}
+
+.controls {
+    ul {
+        list-style: none;
+        margin-left: 0px;
+    }
+}
