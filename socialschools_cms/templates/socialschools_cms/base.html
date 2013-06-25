@@ -21,6 +21,7 @@
         {% render_block 'css' %}
     </head>
     <body>
+        <div class="wrapper">
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
@@ -36,6 +37,9 @@
         <div class="container">
             {% block wrapper %}
             {% endblock %}
+        </div>
+        <div class="push">
+        </div>
         </div>
 
         <footer class="footer">

@@ -1,7 +1,6 @@
 /* general (sitewide) styles for Changer Social Schools */
 
 body {
-    margin-top: 60px;
     background: url("img/background.png") no-repeat center center fixed;
     font-family: "Ubuntu", Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -17,6 +16,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .themeColor {
     color: @themeColor;
+}
+
+a {
+    .linkColor(@themeColor);
+}
+
+.meta-info {
+    color: @grayLight;
 }
 
 .white-widget {
@@ -151,5 +158,15 @@ h1, h2, h3, h4, h5, h6 {
 .invite-delete {
     float: left;
     margin-left: 10px;
+}
+
+.news-container {
+    padding-right: 5px;
+}
+
+.css-well {
+    background-color: fadeout(@themeColor, 95%);
+    border: 1px solid fadeout(@themeColor, 90%);
+    margin-top: 30px;
 }
 
