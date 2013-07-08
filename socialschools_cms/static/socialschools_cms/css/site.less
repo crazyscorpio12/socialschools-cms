@@ -176,3 +176,61 @@ a {
     margin-bottom: 20px;
 }
 
+/* global styles for events */
+
+.event-icon-month {
+    background: @themeColor;
+    text-align: center;
+    .border-radius(3px 3px 0 0);
+    border: 1px solid darken(@themeColor, 10%);
+    color: @white;
+}
+
+.event-icon-day {
+    text-align: center;
+    .border-radius(0 0 3px 3px);
+    border: 1px solid @grayLighter;
+    border-top: none;
+    background: @white;
+}
+
+.event-icon-day-number {
+    font-size: 46px;
+    line-height: 46px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.meta-info {
+    color: @grayLight;
+}
+
+.event-multiday-time {
+    margin-bottom: 0px;
+    strong {
+        text-transform: uppercase;
+    }
+}
+
+.event-singleday-time {
+    font-size: 24px;
+}
+
+.event-location {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+/* specific event styles for events page */
+
+.event-list-item {
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid @grayLighter;
+    h3 {
+        font-weight: 100;
+        margin: 0px;
+        line-height: 24px;
+    }
+}
+
