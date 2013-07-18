@@ -1,4 +1,3 @@
-
 import os
 import dj_database_url
 
@@ -87,6 +86,7 @@ INSTALLED_APPS = (
     'mptt',
     'south',
     'sekizai',
+    'tinymce',
     'cms.plugins.text',
     'cms.plugins.picture',
     'cms.plugins.link',
@@ -149,3 +149,4 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 INTERNAL_IPS = ('127.0.0.1',)
 
+CMS_USE_TINYMCE = True
