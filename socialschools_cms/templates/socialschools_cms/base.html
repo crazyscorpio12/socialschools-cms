@@ -22,23 +22,25 @@
     </head>
     <body>
         <div class="wrapper">
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                {% block navbar%}
-                <ul class="nav">
-                    {% show_menu 0 0 0 100 "socialschools_cms/menu/menu.html" %}
-                </ul>
-                {% endblock %}
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                    {% block navbar%}
+                    <ul class="nav">
+                        {% show_menu 0 0 0 100 "socialschools_cms/menu/menu.html" %}
+                    </ul>
+                    {% endblock %}
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container main-content">
-            {% block wrapper %}
-            {% endblock %}
-        </div>
-        <div class="push">
-        </div>
+            <div class="container">
+                <div class="footer-spacer-top">
+                    {% block wrapper %}
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="footer-spacer">
+            </div>
         </div>
 
         <footer class="footer">
