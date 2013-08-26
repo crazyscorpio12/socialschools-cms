@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-21 12:54+0200\n"
+"POT-Creation-Date: 2013-08-26 13:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,19 +26,19 @@ msgstr "Pagina"
 msgid "Welcome Page"
 msgstr "Welkomst pagina"
 
-#: templates/socialschools_cms/base.html:63
+#: templates/socialschools_cms/base.html:65
 msgid "Previous"
 msgstr "Vorige"
 
-#: templates/socialschools_cms/base.html:64
+#: templates/socialschools_cms/base.html:66
 msgid "Next"
 msgstr "Volgende"
 
-#: templates/socialschools_cms/base.html:65
+#: templates/socialschools_cms/base.html:67
 msgid "Slideshow"
 msgstr "Diavoorstelling"
 
-#: templates/socialschools_cms/base.html:66
+#: templates/socialschools_cms/base.html:68
 msgid "Download"
 msgstr "Download"
 
@@ -55,13 +55,23 @@ msgid "From the classes"
 msgstr "Uit de klassen"
 
 #: templates/socialschools_cms/includes/socialschools_login.html:5
+msgid "My groups"
+msgstr "Mijn groepen"
+
+#: templates/socialschools_cms/includes/socialschools_login.html:6
+msgid ""
+"Log in to your personal environment where you can post messages in your "
+"groups"
+msgstr "Log hier in op je persoonlijke omgeving om berichten te lezen en plaatsen in je groepen."
+
+#: templates/socialschools_cms/includes/socialschools_login.html:7
 msgid "Login"
 msgstr "Inloggen"
 
-#: templates/socialschools_cms/includes/socialschools_login.html:5
+#: templates/socialschools_cms/includes/socialschools_login.html:7
 msgid "or"
 msgstr "of"
 
-#: templates/socialschools_cms/includes/socialschools_login.html:5
+#: templates/socialschools_cms/includes/socialschools_login.html:7
 msgid "Register"
 msgstr "Registreren"
