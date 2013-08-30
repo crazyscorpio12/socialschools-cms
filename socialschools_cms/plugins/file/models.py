@@ -1,3 +1,4 @@
+from django.core.files.storage import default_storage
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from cms.models import CMSPlugin
@@ -38,10 +39,10 @@ class File(CMSPlugin):
         return None
         
     def file_exists(self):
-        return os.path.exists(self.file.path)
+        return default_storage.exists(self.file.name)
         
     def get_file_name(self):
-        return os.path.basename(self.file.path)
+        return os.path.basename(self.file.name)
         
     def get_ext(self):
         return os.path.splitext(self.get_file_name())[1][1:].lower()
