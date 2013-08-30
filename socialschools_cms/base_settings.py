@@ -81,12 +81,10 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'cms',
-    'south',
     'menus',
     'mptt',
     'south',
     'sekizai',
-    'tinymce',
     'cms.plugins.text',
     'cms.plugins.picture',
     'cms.plugins.link',
@@ -94,6 +92,7 @@ INSTALLED_APPS = (
     'cms.plugins.googlemap',
     'cmsplugin_socialschools',
     'socialschools_cms',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging
