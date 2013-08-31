@@ -83,7 +83,6 @@ INSTALLED_APPS = (
     'cms',
     'menus',
     'mptt',
-    'south',
     'sekizai',
     'cms.plugins.text',
     'cms.plugins.picture',
@@ -148,5 +147,11 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 INTERNAL_IPS = ('127.0.0.1',)
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers, heroku takes care of allowed hosts at routing level
+ALLOWED_HOSTS = ['*']
 
 AWS_S3_SECURE_URLS = False
