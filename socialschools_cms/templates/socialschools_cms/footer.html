@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <div class="row">
 {% for child in children %}
         <div class="span2 item-list">
@@ -12,3 +14,5 @@
     {% endif %}
 {% endfor %}
 </div>
+<hr>
+powered by &nbsp;&nbsp; <a href="http://www.socialschools.nl/nl" target="blank"><img src="{% static 'css/img/social-schools-logo.png' %}"></a>
