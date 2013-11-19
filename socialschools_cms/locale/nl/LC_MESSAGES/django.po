@@ -64,7 +64,7 @@ msgstr "Van de school"
 
 #: templates/socialschools_cms/news.html:11
 msgid "From the groups"
-msgstr "Van de groepen"
+msgstr "Uit de groepen"
 
 #: templates/socialschools_cms/includes/socialschools_login.html:5
 msgid ""
