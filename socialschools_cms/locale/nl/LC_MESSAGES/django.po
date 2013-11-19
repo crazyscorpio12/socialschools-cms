@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-13 16:17+0200\n"
+"POT-Creation-Date: 2013-11-19 15:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,11 +60,11 @@ msgstr "Nieuws"
 
 #: templates/socialschools_cms/news.html:8
 msgid "From the School"
-msgstr "Van de School"
+msgstr "Van de school"
 
 #: templates/socialschools_cms/news.html:11
-msgid "From the classes"
-msgstr "Uit de klassen"
+msgid "From the groups"
+msgstr "Van de groepen"
 
 #: templates/socialschools_cms/includes/socialschools_login.html:5
 msgid ""
@@ -86,11 +86,16 @@ msgstr "of"
 msgid ""
 "Dont have an account for this school yet? Register it now and become member "
 "of groups in this school"
-msgstr "Heb je nog geen account voor deze school? Registreer je nu en word lid van groepen in je school"
+msgstr ""
+"Heb je nog geen account voor deze school? Registreer je nu en word lid van "
+"groepen in je school"
 
 #: templates/socialschools_cms/includes/socialschools_login.html:5
 msgid "Register"
 msgstr "Registreer"
+
+#~ msgid "From the classes"
+#~ msgstr "Uit de klassen"
 
 #~ msgid "My groups"
 #~ msgstr "Mijn groepen"
