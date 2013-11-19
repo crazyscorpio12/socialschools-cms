@@ -1,3 +1,10 @@
+/*
+================================================
+Shared styles
+================================================
+*/
+
+
 /* Styles for post */
 
 .post {
@@ -9,10 +16,17 @@
 .post-labels {
     float: left;
     width: 50px;
-    margin-top: 20px;
+    margin-top: 22px;
 }
 
 .post-label-picture {
+    img {
+        height:50px;
+        width:50px;
+    }
+    .css-thumb {
+        .border-radius(80px);
+    }
     img, div {
         border:2px solid @themeColor;
         border-right: 0px;
@@ -22,7 +36,8 @@
 }
 
 .post-label-date {
-    height: 50px;
+    height: 40px;
+    width: 40px;
     color: @white;
     margin-top: 5px;
     .border-radius(3px 0 0 3px);
@@ -36,63 +51,15 @@
     padding-top: 7px;
 }
 
-/* date lable colors */
-
-.lightblue {
-    .post-label-date {
-        background: @labelLightBlue;
-    }
-}
-
-.green {
-    .post-label-date {
-        background: @labelGreen;
-    }
-}
-
-.magenta {
-    .post-label-date {
-        background: @labelMagenta;
-    }
-}
-
-.blue {
-    .post-label-date {
-        background: @labelBlue;
-    }
-}
-
-.lightgreen {
-    .post-label-date {
-        background: @labelLightGreen;
-    }
-}
-
-.yellow {
-    .post-label-date {
-        background: @labelYellow;
-    }
-}
-
-.red {
-    .post-label-date {
-        background: @labelRed;
-    }
-}
-
 .post-label-type {
-    margin-top: 5px;
-    height: 50px;
-    .border-radius(3px 0 0 3px);
+    height: 40px;
+    width: 40px;
+    .border-radius(40px);
     text-align: center;
     #gradient > .vertical(@themeColor, @themeSecondary);
     icon {
-        margin-top: 15px;
+        margin-top: 10px;
     }
-}
-
-.post-label-mngt {
-    margin-top: 20px;
 }
 
 
@@ -100,25 +67,30 @@
 
 .post-body {
     .white-widget;
-    margin-left: 50px;
+    margin-left: 20px;
     .box-sizing(border-box);
 }
 
 .post-header {
     margin: 0px;
     line-height: 24px;
+    border-bottom: none;
 }
 
 .post-description {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .post-author-disabled {
     color: @gray;
+    display: inline-block;
+    h5 {
+        margin-bottom: 0px;
+    }
 }
 
 .post-message-container {
-    padding: 30px 30px 30px 30px;
+    padding: 15px 25px 25px 25px;
     .post-description {
         p {
             white-space: pre-wrap;
@@ -129,10 +101,7 @@
 }
 
 .post-event-container {
-    padding: 20px 30px;
-    margin: 30px -30px -30px -30px;
-    background: lighten(@grayLighter, 5%);
-    border-top: 1px solid @grayLighter;
+    margin-top: 20px;
     icon {
         opacity: 0.5;
     }
@@ -149,7 +118,7 @@
     margin-left: 14px;
     float: left;
     img {
-        max-height: 117px;
+        max-height: 136px;
     }
 }
 
@@ -196,7 +165,9 @@
 
 .comment, .new-comment {
     img {
-        .css-thumb;
+        -webkit-box-shadow: 0 0px 2px 0px rgba(0,0,0,0.3),inset 0 5px 5px rgba(0,0,0,0.5);
+        box-shadow: 0 0px 2px 0px rgba(0,0,0,0.3),inset 0 5px 5px rgba(0,0,0,0.5);
+        .border-radius(120px);
         width: 30px;
         height: 30px;
     }
@@ -226,7 +197,6 @@
 .comment-field-container {
     margin-right: 60px;
     margin-left: 40px;
-
 }
 
 .comment-field {
@@ -239,14 +209,13 @@
 .post-create-container {
     padding: 30px;
     form {
-        margin-bottom: 0px;
+        .nav-tabs {
+            .active a {
+                border-top: 3px solid @themeColor;
+            }
+        }
     }
-    .nav-tabs{
-        margin-top: 20px;
-    }
-    .alert {
-        padding: 10px;
-    }
+
 }
 
 .post-create-title {
@@ -261,11 +230,18 @@
     max-width: 100%;
     .box-sizing(border-box);
     margin-bottom: 10px !important;
+    .border-radius(3px 3px 0 0);
+    margin-bottom: 0px;
 }
 
 .post-create-event-date {
     width: 75px;
     margin-right: 5px;
+    margin-left: 5px;
+}
+
+.post-create-event-time {
+    width: 150px;
     margin-left: 5px;
 }
 
@@ -281,7 +257,7 @@
 }
 
 .post-create-video {
-    width: 100%;
+    width: 400px;
     .box-sizing(border-box);
     height: 30px !important;
 }
@@ -296,5 +272,229 @@
     .border-radius(4px);
     span {
         color: @themeColor;
+    }
+}
+
+.post-more-comments {
+    > span {
+        &:last-child{
+            display:none;
+        }
+    }
+    &.shown > span {
+        &:last-child {
+            display: inline;
+        }
+        &:first-child {
+            display: none;
+        }
+    }
+}
+
+.post-clearfix {
+    margin-left: -20px;
+}
+
+.post-mngt {
+    background: none;
+    border:none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    &:hover {
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+.open {
+    background-color: transparent;
+    .box-shadow(none);
+}
+
+.post-color-event {
+    background:@eventColor;
+}
+
+.post-color-comment {
+    background:@postColor;
+}
+
+.post-body-color-event {
+    border-top:2px solid @eventColor;
+    .post-header {
+      color: @eventColor;
+    }
+}
+
+.post-body-color-comment {
+    border-top:2px solid @postColor;
+    .post-header {
+        color: @postColor;
+    }
+}
+
+.tab-pane > .row > .span4 > icon {
+    padding-left: 90px;
+    line-height: 100px;
+}
+
+.uploadifive-button {
+    margin-top: 36px;
+}
+
+.tab-pane > .row > .span8 > .post-create-video {
+    margin-top: 6px;
+}
+
+.post-create-submit {
+    padding-left: 470px;
+}
+
+.post-label-mngt {
+    display:none;
+}
+
+.post-body {
+    .span5 {
+        margin-left: -21px;
+    }
+    .icon-cog {
+        color:@grayLighter;
+        &:hover {
+            color:@grayLight;
+        }
+    }
+}
+
+.post-label-type > .icon-comment {
+    color: white;
+    line-height: 40px;
+}
+
+.post-label-type > .icon-calendar {
+    color: white;
+    line-height: 40px;
+}
+
+.post-label-mngt {
+    display:none;
+}
+
+.comment-field-container {
+    input {
+        background: @grayLighter;
+        width: 504px;
+        .box-shadow(none);
+    }
+    ::-webkit-input-placeholder {
+        color: grey;
+        font-style: italic;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        color: @grayLight;
+        font-style: italic;
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+        color: @grayLight;
+        font-style: italic;
+    }
+
+    :-ms-input-placeholder {
+        color: grey;
+        font-style: italic;
+    }
+}
+
+.comment-form {
+    padding-right:0px;
+}
+
+.bb-comment-delete {
+    .icon-remove {
+        color:@grayLighter;
+    }
+    .icon-remove:hover {
+        color: @grayLight;
+    }
+}
+
+.nav-tabs > li > a > .icon-calendar {
+    color: @themeColor;
+}
+
+.nav-attachments {
+    color: @themeColor;
+}
+
+.edit-post {
+    .btn-group {
+        margin-top: -7px;
+        margin-left: 18px;
+    }
+}
+
+.public-post {
+    display: inline-block;
+}
+
+.public-info {
+    color: white;
+    background-color: @themeColor;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.meta-comm {
+    margin-left: -3px;
+}
+
+.post-mngt-perm {
+    padding-top: 12px;
+}
+
+.post-author-picture {
+    height:50px;
+    width: 50px;
+    .border-radius(80px);
+    margin-right: 10px;
+}
+
+#id_document {
+    padding-top: 30px;
+}
+
+.video-share {
+    padding-top: 12px;
+    margin-left: -12px;
+}
+
+.post-meta, .post-mgmt {
+    padding-top: 7px;
+}
+
+/*
+================================================
+CMS specific styles
+================================================
+*/
+
+
+/* styles for responsive video */
+
+.video-thumbnail {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
