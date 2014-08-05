@@ -1,7 +1,6 @@
 /* general (sitewide) styles for Changer Social Schools */
 
 body {
-    background: url("img/background.png") no-repeat center center fixed;
     font-family: "Ubuntu", Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -webkit-background-size: cover;
@@ -25,6 +24,10 @@ h2 {
 
 a {
     .linkColor(@themeColor);
+}
+
+.css-breadcrumb {
+    margin: -20px -20px 20px -20px;
 }
 
 .meta-info {
@@ -55,11 +58,15 @@ a {
 }
 
 .stripe-2 {
-    background: @cmsColorSecondary;
+    background: @cmsColorBlue;
 }
 
 .stripe-3 {
-    background: @cmsColorPrimary;
+    background: @cmsColorGreen;
+}
+
+.css-school-logo-login {
+    padding: @ss-min-padding 0;
 }
 
 .school-logo {
@@ -196,8 +203,11 @@ a {
 
 /* cms specific styles */
 
+.css-carousel-slider {
+    margin-top: -20px;
+}
+
 .main-content {
-    padding: 40px;
     margin-bottom: 20px;
     background-color: @white;
     overflow: hidden;
@@ -230,6 +240,14 @@ a {
     }
 }
 
+.css-carousel-description {
+    background-color: @themeColor;
+    padding: @ss-max-padding;
+    opacity: 0.75;
+    color: @white;
+    font-size: @fontSizeLarge;
+}
+
 
 /* topnav and footer responsive styles to override bootstrap */
 
@@ -245,10 +263,6 @@ a {
         margin-left: -20px;
         margin-right: -20px;
     }
-}
-
-.css-breadcrumb {
-    margin: -20px -20px 20px -20px;
 }
 
 /* global styles for events */
@@ -321,3 +335,13 @@ a {
     }
 }
 
+.border-right {
+    padding-right: @ss-max-padding;
+    border-right: 1px solid @grayLighter;
+}
+
+.nav-stacked {
+    .active > a {
+        border-left: 4px solid @themeColor !important;
+    }
+}
