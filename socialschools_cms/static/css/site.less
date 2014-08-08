@@ -240,14 +240,51 @@ a {
     }
 }
 
+/*
+* New welcome page slider styling
+*/
+.image-pointer {
+    margin-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    > li {
+        margin-right: 10px;
+        height: 20px;
+        width: 20px;
+        float: left;
+        .border-radius(50%);
+        opacity: 0.75;
+        background-color: greyscale(@themeColor);
+        border: 1px solid white;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .active {
+        background-color: @themeColor;
+    }
+}
+
+.css-gallery-slider {
+    position: relative;
+    min-height: 400px;
+}
+
 .css-carousel-description {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 360px;
+    width: 31.6%;
     background-color: @themeColor;
     padding: @ss-max-padding;
     opacity: 0.75;
     color: @white;
     font-size: @fontSizeLarge;
 }
-
 
 /* topnav and footer responsive styles to override bootstrap */
 
