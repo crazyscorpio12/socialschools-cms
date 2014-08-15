@@ -1,7 +1,6 @@
 /* general (sitewide) styles for Changer Social Schools */
 
 body {
-    background: url("img/background.png") no-repeat center center fixed;
     font-family: "Ubuntu", Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -webkit-background-size: cover;
@@ -40,6 +39,15 @@ a {
 /* styles for the topbar */
 
 
+img.school-logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div.css-login {
+    padding: 25px 0;
+}
+
 .css-topbar {
     background: white;
 }
@@ -55,11 +63,15 @@ a {
 }
 
 .stripe-2 {
-    background: @cmsColorSecondary;
+    background: @cmsColorBlue;
 }
 
 .stripe-3 {
-    background: @cmsColorPrimary;
+    background: @cmsColorGreen;
+}
+
+.css-school-logo-login {
+    padding: @ss-min-padding 0;
 }
 
 .school-logo {
@@ -196,8 +208,11 @@ a {
 
 /* cms specific styles */
 
+.css-carousel-slider {
+    margin-top: -20px;
+}
+
 .main-content {
-    padding: 40px;
     margin-bottom: 20px;
     background-color: @white;
     overflow: hidden;
@@ -230,6 +245,56 @@ a {
     }
 }
 
+/*
+* New welcome page slider styling
+*/
+
+.css-cmsplugin_gallery {
+    margin-bottom: 0;
+    .carousel-indicators {
+        left: 20px;
+        bottom: 20px;
+        top: inherit;
+        > li {
+            margin-right: 10px;
+            margin-left: 0;
+            height: 20px;
+            width: 20px;
+            float: left;
+            .border-radius(50%);
+            opacity: 0.75;
+            background-color: greyscale(@themeColor);
+            border: 1px solid white;
+            cursor: pointer;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .active {
+            background-color: @themeColor;
+        }
+    }
+}
+
+// gallery container
+.css-gallery-slider {
+    position: relative;
+}
+
+// gallery description
+.css-carousel-description {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: @ss-max-padding;
+    height: 360px;
+    width: 31.6%;
+    background-color: @themeColor;
+    opacity: 0.75;
+    overflow: hidden;
+    color: @white;
+    font-size: @fontSizeLarge;
+}
 
 /* topnav and footer responsive styles to override bootstrap */
 
@@ -245,10 +310,6 @@ a {
         margin-left: -20px;
         margin-right: -20px;
     }
-}
-
-.css-breadcrumb {
-    margin: -20px -20px 20px -20px;
 }
 
 /* global styles for events */
@@ -321,3 +382,13 @@ a {
     }
 }
 
+.border-right {
+    padding-right: @ss-max-padding;
+    border-right: 1px solid @grayLighter;
+}
+
+.nav-stacked {
+    .active > a {
+        border-left: 4px solid @themeColor !important;
+    }
+}

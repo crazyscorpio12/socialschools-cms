@@ -139,6 +139,8 @@ EMAIL_USE_TLS = True
 CMS_TEMPLATES = (
     ('socialschools_cms/page.html', gettext('Page')),
     ('socialschools_cms/welcome_page.html', gettext('Welcome Page')),
+    ('socialschools_cms/page_new.html', gettext('New Page')),
+    ('socialschools_cms/welcome_page_new.html', gettext('New Welcome Page')),
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
