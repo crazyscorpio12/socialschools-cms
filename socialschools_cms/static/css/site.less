@@ -208,8 +208,27 @@ div.css-login {
 
 /* cms specific styles */
 
+/* styles for carousels on both different home templates */
+
 .css-carousel-slider {
     margin-top: -20px;
+    max-height: 360px;
+}
+
+@media (min-width: 979px) {
+    .css-gallery-slider .carousel-inner {
+        -webkit-transform: translateY(-25%);
+        -ms-transform: translateY(-25%);
+        transform: translateY(-25%);
+    }
+}
+
+.circle .carousel {
+    position: absolute;
+    img {
+        max-width: 100%;
+        position: relative;
+    }
 }
 
 .main-content {
