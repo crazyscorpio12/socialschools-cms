@@ -1,0 +1,146 @@
+/* styling for different navbars */
+
+/* boostrap overrides for top navbar theme 1 and 2 */
+
+.navbar-inner {
+    .border-radius(0px);
+    border: none;
+    border-bottom: 1px solid darken(@themeSecondary, 10%);
+    #gradient > .vertical(@themeColor, @themeSecondary);
+    .nav {
+        li {
+            a {
+                .buttonLinkColor(@themeColor);
+                text-shadow: none;
+            }
+        }
+        .active {
+            a {
+                background-color: @themeColor !important;
+                .buttonLinkColor(@themeColor);
+                font-weight: bold;
+                .box-shadow(0 3px 8px rgba(0,0,0,0.35) inset);
+            }
+        }
+    }
+}
+
+/* media queries to override bootstraps full width navbar container */
+
+@media (min-width: 1200px) {
+    .css-navbar .container {
+        width:1170px;
+    }
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+    .css-navbar .container {
+        width:960px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .css-navbar .container {
+        width:724px;
+    }
+}
+
+
+/* navbar styles for theme 1 and 2 */
+
+img.school-logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div.css-login {
+    padding: 25px 0;
+}
+
+.css-topbar {
+    background: white;
+}
+
+.css-stripe {
+    float: left;
+    width: 20%;
+    height: 2px;
+}
+
+.stripe-1 {
+    background: @themeColor;
+}
+
+.stripe-2 {
+    background: @cmsColorBlue;
+}
+
+.stripe-3 {
+    background: @cmsColorGreen;
+}
+
+.css-school-logo-login {
+    padding: @ss-min-padding 0;
+}
+
+.school-logo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-height: 30px;
+    max-width: 600px;
+}
+
+.css-login {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* bootstrap overrides for top navbar theme 3 */
+
+.navbar-theme-3 .container > .navbar-nav li > a {
+    background-color: @white;
+    .box-shadow(none);
+}
+
+/* navbar styles for theme 3 */
+
+.navbar-theme-3 {
+  background-color: white;
+  border-bottom: 1px solid #eeeeee;
+  .nav > li {
+    height: 73px;
+  }
+  .container > .navbar-nav {
+    margin-left: 25px;
+    li > a {
+          line-height: 50px;
+          color: black;
+          font-weight: bold;
+          font-size: 14px;
+    }
+    li.active > a {
+      color: @themeColor;
+      border-bottom: 3px solid @themeColor;
+    }
+  }
+  .logo-navbar {
+    float: left;
+    height: 50px;
+    margin-top: 12px;
+    margin-left: -15px;
+  }
+  .school-logo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-height: 30px;
+    max-width: 600px;
+  }
+  img.school-logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .css-login {
+    margin: 0px;
+    line-height: 73px;
+  }
+}
+

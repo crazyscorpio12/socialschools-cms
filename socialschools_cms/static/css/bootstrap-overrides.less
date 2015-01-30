@@ -18,42 +18,7 @@
     .buttonBackground(lighten(#52b42b, 10%), #52b42b);
 }
 
-.navbar-inner {
-    .border-radius(0px);
-    border: none;
-    border-bottom: 1px solid darken(@themeSecondary, 10%);
-    #gradient > .vertical(@themeColor, @themeSecondary);
-    .nav {
-        li {
-            a {
-                .buttonLinkColor(@themeColor);
-                text-shadow: none;
-            }
-        }
-        .active {
-            a {
-                background-color: @themeColor !important;
-                .buttonLinkColor(@themeColor);
-                font-weight: bold;
-                .box-shadow(0 3px 8px rgba(0,0,0,0.35) inset);
-            }
-        }
-    }
-}
-
-.form-actions {
-    background: none;
-    border: 0;
-}
-
-.controls {
-    ul {
-        list-style: none;
-        margin-left: 0px;
-    }
-}
-
-/* cms-specific */
+/* stacked nav for content pages in theme 1 and 2 */
 
 .nav-stacked {
     li {
@@ -70,3 +35,19 @@
         }
     }
 }
+
+
+/* other overrides */
+
+.form-actions {
+    background: none;
+    border: 0;
+}
+
+.controls {
+    ul {
+        list-style: none;
+        margin-left: 0px;
+    }
+}
+
