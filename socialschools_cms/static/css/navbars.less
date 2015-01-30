@@ -1,5 +1,48 @@
 /* styling for different navbars */
 
+// generic styles for all themes
+
+//// styles for centering school-logo
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.school-logo {
+  max-height: 50px;
+  max-width: 400px;
+  vertical-align: middle;
+}
+
+.css-login {
+  margin-top: 24px;
+  .btn {
+    margin-top: 0px;
+  }
+}
+
+//// media queries to override bootstraps full width navbar container
+
+@media (min-width: 1200px) {
+    .css-navbar .container {
+        width:1170px;
+    }
+}
+@media (min-width: 979px) and (max-width: 1200px) {
+    .css-navbar .container {
+        width:960px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .css-navbar .container {
+        width:724px;
+    }
+}
+
+
+
+
 /* boostrap overrides for top navbar theme 1 and 2 */
 
 .navbar-inner {
@@ -22,24 +65,6 @@
                 .box-shadow(0 3px 8px rgba(0,0,0,0.35) inset);
             }
         }
-    }
-}
-
-/* media queries to override bootstraps full width navbar container */
-
-@media (min-width: 1200px) {
-    .css-navbar .container {
-        width:1170px;
-    }
-}
-@media (min-width: 979px) and (max-width: 1200px) {
-    .css-navbar .container {
-        width:960px;
-    }
-}
-@media (min-width: 768px) and (max-width: 979px) {
-    .css-navbar .container {
-        width:724px;
     }
 }
 
@@ -68,19 +93,6 @@
   background: @white;
   .logo-theme-12 {
     height: 80px;
-    .helper {
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-    }
-    .school-logo {
-      max-height: 50px;
-      max-width: 400px;
-      vertical-align: middle;
-    }
-  }
-  .css-login {
-    margin-top: 24px;
   }
 }
 
@@ -96,14 +108,18 @@
 
 .navbar-theme-3 {
   background-color: white;
+  height: 80px;
   border-bottom: 1px solid #eeeeee;
+  .logo-theme-3 {
+    height: 80px;
+    display: block;
+  }
   .nav > li {
-    height: 73px;
   }
   .container > .navbar-nav {
     margin-left: 25px;
     li > a {
-          line-height: 50px;
+          line-height: 58px;
           color: black;
           font-weight: bold;
           font-size: 14px;
