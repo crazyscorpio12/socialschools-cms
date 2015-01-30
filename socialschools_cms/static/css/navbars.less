@@ -46,25 +46,6 @@
 
 /* navbar styles for theme 1 and 2 */
 
-img.school-logo {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-div.css-login {
-    padding: 25px 0;
-}
-
-.css-topbar {
-    background: white;
-}
-
-.css-stripe {
-    float: left;
-    width: 20%;
-    height: 2px;
-}
-
 .stripe-1 {
     background: @themeColor;
 }
@@ -77,20 +58,30 @@ div.css-login {
     background: @cmsColorGreen;
 }
 
-.css-school-logo-login {
-    padding: @ss-min-padding 0;
+.stripe-theme-12 {
+    float: left;
+    width: 20%;
+    height: 2px;
 }
 
-.school-logo {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    max-height: 30px;
-    max-width: 600px;
-}
+.topbar-theme-12 {
+  background: @white;
+  .logo-theme-12 {
+    height: 80px;
+    .helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    .school-logo {
+      max-height: 50px;
+      max-width: 400px;
+      vertical-align: middle;
+    }
+  }
+  .css-login {
 
-.css-login {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  }
 }
 
 
@@ -121,26 +112,6 @@ div.css-login {
       color: @themeColor;
       border-bottom: 3px solid @themeColor;
     }
-  }
-  .logo-navbar {
-    float: left;
-    height: 50px;
-    margin-top: 12px;
-    margin-left: -15px;
-  }
-  .school-logo {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    max-height: 30px;
-    max-width: 600px;
-  }
-  img.school-logo {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .css-login {
-    margin: 0px;
-    line-height: 73px;
   }
 }
 

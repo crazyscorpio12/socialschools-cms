@@ -2,6 +2,7 @@
 {% load sekizai_tags %}
 {% load menu_tags %}
 {% load i18n %}
+{% load compress %}
 {% load socialschools_tags %}
 {% load cms_tags %}
 
@@ -10,16 +11,17 @@
     {% include "socialschools_cms/includes/head.html" %}
     <body>
         <div class="footer-row">
-            <div class="css-topbar">
-                <div class="css-stripes">
-                    <div class="css-stripe stripe-1"></div>
-                    <div class="css-stripe stripe-2"></div>
-                    <div class="css-stripe stripe-3"></div>
-                    <div class="css-stripe stripe-1"></div>
-                    <div class="css-stripe stripe-2"></div>
-                </div>
-                <div class="container css-school-logo-login">
-                    {% placeholder "Logo Plugin" inherit %}
+            <div class="topbar-theme-12">
+                <div class="stripe-theme-12 stripe-1"></div>
+                <div class="stripe-theme-12 stripe-2"></div>
+                <div class="stripe-theme-12 stripe-3"></div>
+                <div class="stripe-theme-12 stripe-1"></div>
+                <div class="stripe-theme-12 stripe-2"></div>
+                <div class="container">
+                    <div class="logo-theme-12 pull-left">
+                        <span class="helper"></span>
+                        {% placeholder "Logo Plugin" inherit %}
+                    </div>
                     {% placeholder "Login" inherit %}
                 </div>
             </div>
