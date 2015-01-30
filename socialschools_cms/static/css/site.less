@@ -305,6 +305,9 @@ div.css-login {
 // gallery container
 .css-gallery-slider {
     position: relative;
+    img {
+        min-height: 250px;
+    }
 }
 
 // gallery description
@@ -312,14 +315,27 @@ div.css-login {
     position: absolute;
     top: 0;
     right: 0;
-    padding: @ss-max-padding;
     height: 360px;
     width: 31.6%;
-    background-color: @themeColor;
-    opacity: 0.75;
+    min-width: 250px;
     overflow: hidden;
     color: @white;
     font-size: @fontSizeLarge;
+    >.css-carousel-description-background {
+        width: 100%;
+        height: 100%;
+        background-color: @themeColor;
+        opacity: 0.75;
+    }
+    >.css-carousel-description-text {
+        padding: 20px;
+        position: absolute;
+        top: 0px;
+        color: @white;
+        > h1, h2, h3, h4 {
+        color: @white;
+        }
+    }
 }
 
 /* topnav and footer responsive styles to override bootstrap */
