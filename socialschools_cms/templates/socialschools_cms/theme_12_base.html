@@ -3,29 +3,11 @@
 {% load menu_tags %}
 {% load i18n %}
 {% load socialschools_tags %}
+{% load cms_tags %}
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="csrf-token" content="{{csrf_token}}">
-
-        <title>{% block _title %}{% endblock %}</title>
-
-        <meta name="description" content="{% block _description %}{% endblock %}">
-        <meta name="keywords" content="{% block _keywords %}{% endblock %}">
-        <meta name="author" content="Changer">
-
-        {% if debug %}
-            <link rel="stylesheet/less" type="text/css" href="{% static 'css/styles.less' %}">
-            <script src="{% static 'js/less.1.3.3.min.js' %}"></script>
-        {% else %}
-            <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
-        {% endif %}
-
-        {% render_block 'css' %}
-    </head>
+    {% include "socialschools_cms/includes/head.html" %}
     <body>
         <div class="footer-row">
             <div class="css-topbar">
@@ -37,8 +19,8 @@
                     <div class="css-stripe stripe-2"></div>
                 </div>
                 <div class="container css-school-logo-login">
-                    <img class="school-logo" src="{% static 'css/img/school-logo.png' %}">
-                    {% socialschools_login %}
+                    {% placeholder "Logo Plugin" inherit %}
+                    {% placeholder "Login" inherit %}
                 </div>
             </div>
             <div class="navbar">
@@ -63,7 +45,7 @@
         <footer class="footer-row css-footer">
             {% block footer %}
             <div class="container">
-                {% show_menu 0 1 1 100 "socialschools_cms/footer.html" %}
+                {% show_menu 0 1 1 100 "socialschools_cms/includes/footer.html" %}
             </div>
             {% endblock %}
         </footer>
