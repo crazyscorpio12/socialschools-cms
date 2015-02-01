@@ -17,6 +17,7 @@
 
 .css-login {
   margin-top: 24px;
+  margin-bottom: 24px;
   .btn {
     margin-top: 0px;
   }
@@ -108,7 +109,6 @@
 
 .navbar-theme-3 {
   background-color: white;
-  height: 80px;
   border-bottom: 1px solid #eeeeee;
   .logo-theme-3 {
     height: 80px;
@@ -128,6 +128,18 @@
       color: @themeColor;
       border-bottom: 3px solid @themeColor;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-theme-3 {
+    display: none !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .navbar-theme-3{
+    padding: 0px 20px;
   }
 }
 
