@@ -1,0 +1,58 @@
+{% load staticfiles %}
+{% load sekizai_tags %}
+{% load menu_tags %}
+{% load i18n %}
+{% load compress %}
+{% load socialschools_tags %}
+{% load cms_tags %}
+
+<!DOCTYPE html>
+<html>
+    {% include "socialschools_cms/includes/head.html" %}
+    <body>
+        <div class="footer-row">
+            <div class="navbar navbar-fixed-top navbar-theme-3">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="logo-theme-3 pull-left" href="#">
+                            <span class="helper"></span>
+                            {% placeholder "Logo Plugin" inherit %}
+                        </a>
+                    </div>
+                    {% block navbar %}
+                    <ul class="nav navbar-nav pull-left">
+                        {% show_menu 0 0 0 100 "socialschools_cms/menu/menu.html" %}
+                    </ul>
+                    {% endblock %}
+                    {% placeholder "Login" inherit %}
+                </div>
+            </div>
+        </div>
+        <div class="footer-row-expand">
+            {% block wrapper %}
+            {% endblock %}
+        </div>
+
+        <footer class="footer-row css-footer">
+            {% block footer %}
+            <div class="container">
+                {% show_menu 0 1 1 100 "socialschools_cms/includes/footer.html" %}
+            </div>
+            {% endblock %}
+        </footer>
+
+        {% compress js %}
+            {% if debug %}
+                <script type="text/javascript" src="{% static 'js/jquery.1.9.1.min.js' %}"></script>
+                <script type="text/javascript" src="{% static 'js/jquery.colorbox.js' %}"></script>
+                <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+                <script type="text/javascript" src="{% static 'js/socialschools-cms.js' %}"></script>
+                <script type="text/javascript" src="{% static 'js/multitenant.js' %}"></script>
+            {% else %}
+                <script type="text/javascript" src="{% static 'js/multitenant-cms.min.js' %}"></script>
+            {% endif %}
+        {% endcompress %}
+        {% render_block 'js' %}
+        {% placeholder "Google Analytics" inherit %}
+    </body>
+</html>

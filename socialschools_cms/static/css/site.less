@@ -36,73 +36,7 @@ a {
     .border-radius(3px);
 }
 
-/* styles for the topbar */
 
-
-img.school-logo {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-div.css-login {
-    padding: 25px 0;
-}
-
-.css-topbar {
-    background: white;
-}
-
-.css-stripe {
-    float: left;
-    width: 20%;
-    height: 2px;
-}
-
-.stripe-1 {
-    background: @themeColor;
-}
-
-.stripe-2 {
-    background: @cmsColorBlue;
-}
-
-.stripe-3 {
-    background: @cmsColorGreen;
-}
-
-.css-school-logo-login {
-    padding: @ss-min-padding 0;
-}
-
-.school-logo {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    max-height: 30px;
-    max-width: 600px;
-}
-
-.css-login {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-/* media queries to override bootstraps full width navbar container */
-
-@media (min-width: 1200px) {
-    .css-navbar .container {
-        width:1170px;
-    }
-}
-@media (min-width: 979px) and (max-width: 1200px) {
-    .css-navbar .container {
-        width:960px;
-    }
-}
-@media (min-width: 768px) and (max-width: 979px) {
-    .css-navbar .container {
-        width:724px;
-    }
-}
 
 /* styles for the main content containers */
 
@@ -208,29 +142,6 @@ div.css-login {
 
 /* cms specific styles */
 
-/* styles for carousels on both different home templates */
-
-.css-carousel-slider {
-    margin-top: -20px;
-    max-height: 360px;
-}
-
-@media (min-width: 979px) {
-    .css-gallery-slider .carousel-inner {
-        -webkit-transform: translateY(-25%);
-        -ms-transform: translateY(-25%);
-        transform: translateY(-25%);
-    }
-}
-
-.circle .carousel {
-    position: absolute;
-    img {
-        max-width: 100%;
-        position: relative;
-    }
-}
-
 .main-content {
     margin-bottom: 20px;
     background-color: @white;
@@ -268,73 +179,6 @@ div.css-login {
     .box-shadow(0 0 10px @themeColor);
     img {
         position: absolute;
-    }
-}
-
-/*
-* New welcome page slider styling
-*/
-
-.css-cmsplugin_gallery {
-    margin-bottom: 0;
-    .carousel-indicators {
-        left: 20px;
-        bottom: 20px;
-        top: inherit;
-        > li {
-            margin-right: 10px;
-            margin-left: 0;
-            height: 20px;
-            width: 20px;
-            float: left;
-            .border-radius(50%);
-            opacity: 0.75;
-            background-color: greyscale(@themeColor);
-            border: 1px solid white;
-            cursor: pointer;
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-        .active {
-            background-color: @themeColor;
-        }
-    }
-}
-
-// gallery container
-.css-gallery-slider {
-    position: relative;
-    img {
-        min-height: 250px;
-    }
-}
-
-// gallery description
-.css-carousel-description {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 360px;
-    width: 31.6%;
-    min-width: 250px;
-    overflow: hidden;
-    color: @white;
-    font-size: @fontSizeLarge;
-    >.css-carousel-description-background {
-        width: 100%;
-        height: 100%;
-        background-color: @themeColor;
-        opacity: 0.75;
-    }
-    >.css-carousel-description-text {
-        padding: 20px;
-        position: absolute;
-        top: 0px;
-        color: @white;
-        > h1, h2, h3, h4 {
-        color: @white;
-        }
     }
 }
 
