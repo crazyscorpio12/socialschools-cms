@@ -13,6 +13,9 @@
         <div class="footer-row">
             <div class="navbar navbar-fixed-top navbar-theme-3">
                 <div class="container">
+                    <a class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="fa fa-navicon fa-2x"></i>
+                    </a>
                     <div class="navbar-header">
                         <a class="logo-theme-3 pull-left" href="#">
                             <span class="helper"></span>
@@ -20,11 +23,15 @@
                         </a>
                     </div>
                     {% block navbar %}
-                    <ul class="nav navbar-nav pull-left">
-                        {% show_menu 0 0 0 100 "socialschools_cms/menu/menu.html" %}
-                    </ul>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            {% show_menu 0 0 0 100 "socialschools_cms/menu/menu.html" %}
+                        </ul>
+                        <div class="login-theme-3">
+                            {% placeholder "Login" inherit %}
+                        </div>
+                    </div>
                     {% endblock %}
-                    {% placeholder "Login" inherit %}
                 </div>
             </div>
         </div>
