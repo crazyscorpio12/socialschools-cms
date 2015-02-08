@@ -272,10 +272,57 @@ a {
 .border-right {
     padding-right: @ss-max-padding;
     border-right: 1px solid @grayLighter;
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .border-right {
+        border-right: 0px;
+        padding-right: 0px;
+    }
 }
 
 .nav-stacked {
     .active > a {
         border-left: 4px solid @themeColor !important;
     }
+}
+
+.breadcrumb-theme-3 {
+    margin-top: 80px;
+    border-bottom: 1px solid #eeeeee;
+    .breadcrumb {
+        background: none;
+        margin-bottom: 0px;
+        text-shadow: none;
+    }
+}
+
+@media (max-width: 980px) {
+    .breadcrumb-theme-3 {
+        margin-top: 0px;
+    }
+}
+
+.content-theme-3 {
+    padding-top: 20px;
+    .nav-stacked > li > a {
+        color: #333333;
+        border: none;
+        text-transform: uppercase;
+        &:hover {
+            background: none;
+            border: none;
+        }
+    }
+    .nav-stacked > .active a {
+        background: none;
+        color: @themeColor;
+        font-weight: bold;
+        border-left: none !important;
+    }
+}
+
+.widgets-theme-3 {
+    padding-top: 20px;
 }
