@@ -10,7 +10,7 @@
   vertical-align: middle;
 }
 .school-logo {
-  max-height: 50px;
+  max-height: 95px;
   max-width: 400px;
   vertical-align: middle;
 }
@@ -110,8 +110,8 @@
 .navbar-theme-3 {
   background-color: white;
   border-bottom: 1px solid #eeeeee;
+  height: 80px;
   .logo-theme-3 {
-    height: 80px;
     display: block;
   }
   .btn-navbar {
@@ -136,6 +136,34 @@
     background: none !important;
     .box-shadow(none) !important;
   }
+}
+
+.logo-theme-3.logo-expanded {
+  height: 140px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-left: -25px;
+  background-image: url("img/theme-3-topbar-mask.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  .school-logo {
+    height: 120px;
+  }
+}
+
+.logo-theme-3.logo-collapsed {
+  height: 80px;
+  .school-logo {
+    height: 40px;
+  }
+}
+
+.logo-theme-3,
+.school-logo {
+  transition: all 0.25s;
+  -moz-transition: all 0.25s; /* Firefox 4 */
+  -webkit-transition: all 0.25s; /* Safari and Chrome */
+  -o-transition: all 0.25s; /* Opera */
 }
 
 .login-theme-3 {
