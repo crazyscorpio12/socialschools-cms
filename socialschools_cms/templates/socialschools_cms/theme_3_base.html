@@ -25,7 +25,7 @@
                     {% block navbar %}
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            {% show_menu 0 0 0 100 "socialschools_cms/menu/menu.html" %}
+                            {% show_menu 0 1 1 100 "socialschools_cms/menu/menu_dropdown.html" %}
                         </ul>
                         <div class="login-theme-3">
                             {% placeholder "Login" inherit %}
@@ -56,6 +56,7 @@
                 <script type="text/javascript" src="{% static 'js/socialschools-cms.js' %}"></script>
                 <script type="text/javascript" src="{% static 'js/multitenant.js' %}"></script>
                 <script type="text/javascript" src="{% static 'js/theme3-topbar.js' %}"></script>
+                <script type="text/javascript" src="{% static 'js/bootstrap-hover-dropdown.min.js' %}"></script>
             {% else %}
                 <script type="text/javascript" src="{% static 'js/multitenant-cms.min.js' %}"></script>
             {% endif %}
