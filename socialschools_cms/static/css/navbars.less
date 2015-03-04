@@ -124,17 +124,29 @@
       color: @themeColor;
     }
   }
-  li > a {
+  .nav > li > a {
     line-height: 58px;
     color: black;
     font-weight: bold;
     font-size: 14px;
+    &:hover {
+      background-color: @grayLighter;
+      color: @black;
+    }
   }
-  li.active > a {
+  .nav > li.active > a {
     color: @themeColor;
     border-bottom: 3px solid @themeColor;
-    background: none !important;
+    background-color: @white;
     .box-shadow(none) !important;
+    &:hover {
+      background-color: @grayLighter;
+    }
+  }
+  .dropdown-menu > li > a {
+    line-height: 48px;
+    border-bottom: none !important;
+    color: @themeColor;
   }
 }
 
