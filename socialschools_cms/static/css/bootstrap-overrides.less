@@ -36,6 +36,39 @@
     }
 }
 
+/* Overrides for dropdown menu */
+
+// Hover/Focus state
+// -----------
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+    text-decoration: none;
+    color: @themeColor;
+    background: @grayLighter;
+}
+
+// Active state
+// ------------
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    color: @themeColor;
+    text-decoration: none;
+    outline: 0;
+    background: none;
+}
+
+.navbar .nav li.dropdown.open .dropdown-toggle {
+    background-color: @grayLighter;
+    color: @black;
+}
+
+.navbar .nav li.dropdown.active > .dropdown-toggle {
+    background-color:  @white;
+}
+
 
 /* other overrides */
 
