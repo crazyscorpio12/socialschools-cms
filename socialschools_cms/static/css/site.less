@@ -319,8 +319,16 @@ a {
 
 .content-theme-3 {
     padding-top: 20px;
+    .nav {
+        border-style: solid;
+        border-width: 44px 40px 42px 25px;
+        -moz-border-image: url("img/theme-3-submenu.jpg") 44 40 42 25 repeat;
+        -webkit-border-image: url("img/theme-3-submenu.jpg") 44 40 42 25 repeat;
+        -o-border-image: url("img/theme-3-submenu.jpg") 44 40 42 25 repeat;
+        border-image: url("img/theme-3-submenu.jpg") 44 40 42 25 fill repeat;
+    }
     .nav-stacked > li > a {
-        color: #333333;
+        color: rgba(255,255,255,0.7);
         border: none;
         text-transform: uppercase;
         &:hover {
@@ -330,7 +338,7 @@ a {
     }
     .nav-stacked > .active a {
         background: none;
-        color: @themeColor;
+        color: rgba(255,255,255,0.7);
         font-weight: bold;
         border-left: none !important;
     }
