@@ -300,12 +300,20 @@ a {
 }
 
 .breadcrumb-theme-3 {
+    position: relative;
     margin-top: 80px;
-    border-bottom: 1px solid #eeeeee;
+    background-color: @grayLighter;
     .breadcrumb {
-        background: none;
+        background-color: @grayLighter;
         margin-bottom: 0px;
         text-shadow: none;
+    }
+    .theme-3-breadcrumb-mask {
+        position: absolute;
+        height: 20px;
+        top: 30px;
+        width: 100%;
+        background: url("img/theme-3-mask-grey.png") repeat-x;
     }
 }
 
@@ -318,7 +326,7 @@ a {
 /* specific styles for theme-3 */
 
 .content-theme-3 {
-    padding-top: 20px;
+    padding-top: 40px;
     .nav {
         border-style: solid;
         border-width: 44px 40px 42px 25px;
@@ -355,5 +363,5 @@ a {
 }
 
 .widgets-theme-3 {
-    padding-top: 20px;
+    padding-top: 40px;
 }

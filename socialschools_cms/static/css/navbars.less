@@ -150,16 +150,33 @@
   }
 }
 
-.logo-theme-3-expandable.logo-expanded {
-  height: 140px;
-  padding-right: 25px;
-  padding-left: 25px;
-  margin-left: -25px;
-  background-image: url("img/theme-3-topbar-mask.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  .school-logo {
+.navbar-header-theme-3-home {
+  .logo-theme-3-expandable.logo-expanded {
+    height: 140px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-left: -25px;
+    background-image: url("img/theme-3-topbar-mask.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    .school-logo {
+      height: 120px;
+    }
+  }
+}
+
+.navbar-header-theme-3-content {
+  .logo-theme-3-expandable.logo-expanded {
     height: 120px;
+    padding-right: 25px;
+    padding-left: 20px;
+    margin-left: -25px;
+    background-image: url("img/theme-3-topbar-mask.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    .school-logo {
+      height: 80px;
+    }
   }
 }
 
@@ -167,10 +184,13 @@
   .navbar-theme-3 {
     height: auto;
   }
-  .logo-theme-3-expandable.logo-expanded {
-    height: 80px;
-    .school-logo {
-      height: 40px;
+  .navbar-header-theme-3-home,
+  .navbar-header-theme-3-content {
+      .logo-theme-3-expandable.logo-expanded {
+        height: 80px;
+      .school-logo {
+        height: 40px;
+      }
     }
   }
 }
