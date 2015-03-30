@@ -11,8 +11,29 @@
     {% include "socialschools_cms/includes/head.html" %}
     <body class="theme-3">
         <div class="footer-row">
-            {% block navbar %}
-            {% endblock %}
+            <div class="navbar navbar-fixed-top navbar-theme-3">
+                <div class="container">
+                    <a class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="fa fa-navicon fa-2x"></i>
+                    </a>
+                    <div class="navbar-header navbar-header-theme-3-home">
+                        <a class="logo-theme-3-expandable logo-expanded pull-left" href="#">
+                            <span class="helper"></span>
+                            {% placeholder "Logo Plugin" inherit %}
+                        </a>
+                    </div>
+                {% block navbar %}
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            {% show_menu 0 1 1 100 "socialschools_cms/menu/menu_dropdown.html" %}
+                        </ul>
+                        <div class="login-theme-3">
+                            {% placeholder "Login" inherit %}
+                        </div>
+                    </div>
+                {% endblock %}
+                </div>
+            </div>
         </div>
         <div class="footer-row-expand">
             {% block wrapper %}
