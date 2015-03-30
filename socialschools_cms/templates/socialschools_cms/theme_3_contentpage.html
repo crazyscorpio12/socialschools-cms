@@ -2,10 +2,6 @@
 {% load cms_tags %}
 {% load menu_tags %}
 
-{% block navbar %}
-    {% include "socialschools_cms/includes/theme_3_navbar_content.html" %}
-{% endblock %}
-
 {% block wrapper %}
     <div class="breadcrumb-theme-3">
         <div class="container">
@@ -13,7 +9,6 @@
                 {% show_breadcrumb "socialschools_cms/menu/breadcrumb.html" %}
             </div>
         </div>
-        <div class="theme-3-breadcrumb-mask"></div>
     </div>
     <div class="container">
         <div class="row">
