@@ -12,6 +12,11 @@
     <body class="theme-3">
         <div class="footer-row">
             <div class="navbar navbar-fixed-top navbar-theme-3">
+                <div class="theme-3-login-bar">
+                    <div class="container">
+                        <a href="">Inloggen ouderportaal</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="">registreer</a>
+                    </div>
+                </div>
                 <div class="container">
                     <a class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
                         <i class="fa fa-navicon fa-2x"></i>
@@ -27,9 +32,6 @@
                         <ul class="nav">
                             {% show_menu 0 1 1 100 "socialschools_cms/menu/menu_dropdown.html" %}
                         </ul>
-                        <div class="login-theme-3">
-                            {% placeholder "Login" inherit %}
-                        </div>
                     </div>
                 {% endblock %}
                 </div>
