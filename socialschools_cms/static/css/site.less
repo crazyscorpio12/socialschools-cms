@@ -1,6 +1,6 @@
 /* general (sitewide) styles for Changer Social Schools */
 
-@import url(http://fonts.googleapis.com/css?family=Gochi+Hand);
+@import url(http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo);
 
 body {
     font-family: "Ubuntu", Helvetica, sans-serif;
@@ -15,8 +15,30 @@ h1, h2, h3, h4, h5, h6 {
     color: @headerColor;
 }
 
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.theme-3 p {
+    font-family: 'Arial', 'Ubuntu', sans-serif;
+    color: #666666;
+    font-size: 16px;
+}
+
 .theme-3 h1,
-.theme-3 h2,
+.theme-3 h2 {
+    font-family: 'Swanky and Moo Moo', 'Arial', sans-serif;
+}
+
+.theme-3 h2 {
+    font-size: 36px;
+}
+
+.theme-3 h3 {
+    font-size: 18px;
+}
+
 .theme-3 h3,
 .theme-3 h4,
 .theme-3 h5,
@@ -24,13 +46,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Arial', 'Ubuntu', sans-serif;
 }
 
-h2 {
-    font-size: 24px;
-    line-height: 28px;
-}
-
 .themeColor {
     color: @themeColor;
+}
+
+.black {
+    color: #000000;
 }
 
 a {
@@ -159,16 +180,20 @@ a {
     overflow: hidden;
 }
 
-.news-container {
+.news-container, .news-theme-3 {
     padding: 10px;
-    margin-top: -20px;
     margin-bottom: 20px;
     min-height: 400px;
     max-height: 700px;
     overflow: scroll;
-    .border-radius(0px 0px 4px 4px);
     border: 1px solid #DDDDDD;
+    .border-radius(4px);
+}
+
+.news-container {
     border-top: none;
+    .border-radius(0px 0px 4px 4px);
+    margin-top: -20px;
 }
 
 .css-well {
@@ -300,12 +325,14 @@ a {
 }
 
 .breadcrumb-theme-3 {
-    margin-top: 80px;
-    border-bottom: 1px solid #eeeeee;
+    position: relative;
+    margin-top: 109px;
+    border-bottom: 1px solid @grayLighter;
     .breadcrumb {
-        background: none;
+        background-color: @white;
         margin-bottom: 0px;
         text-shadow: none;
+        padding-right: 0px;
     }
 }
 
@@ -317,20 +344,33 @@ a {
 
 /* specific styles for theme-3 */
 
+.row-banners {
+    margin-bottom: 40px;
+}
+
 .content-theme-3 {
-    padding-top: 20px;
+    padding-top: 40px;
+    .nav {
+        border-style: solid;
+        border-width: 44px 40px 42px 25px;
+        -moz-border-image: url("img/theme-3-submenu.jpg") 44 40 42 25 repeat;
+        -webkit-border-image: url("img/theme-3-submenu.jpg") 44 40 42 25 repeat;
+        -o-border-image: url("img/theme-3-submenu.jpg") 44 40 42 25 repeat;
+        border-image: url("img/theme-3-submenu.jpg") 44 40 42 25 fill repeat;
+    }
     .nav-stacked > li > a {
-        color: #333333;
+        color: rgba(255,255,255,0.7);
         border: none;
         text-transform: uppercase;
         &:hover {
             background: none;
             border: none;
+            color: white;
         }
     }
     .nav-stacked > .active a {
         background: none;
-        color: @themeColor;
+        color: white;
         font-weight: bold;
         border-left: none !important;
     }
@@ -347,5 +387,5 @@ a {
 }
 
 .widgets-theme-3 {
-    padding-top: 20px;
+    padding-top: 40px;
 }

@@ -12,26 +12,28 @@
     <body class="theme-3">
         <div class="footer-row">
             <div class="navbar navbar-fixed-top navbar-theme-3">
+                <div class="theme-3-login-bar">
+                    <div class="container">
+                        {% placeholder "Login" inherit %}
+                    </div>
+                </div>
                 <div class="container">
                     <a class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
                         <i class="fa fa-navicon fa-2x"></i>
                     </a>
-                    <div class="navbar-header">
-                        <a class="logo-theme-3 logo-expanded pull-left" href="#">
+                    <div class="navbar-header navbar-header-theme-3">
+                        <a class="logo-theme-3-expandable logo-expanded pull-left" href="#">
                             <span class="helper"></span>
                             {% placeholder "Logo Plugin" inherit %}
                         </a>
                     </div>
-                    {% block navbar %}
+                {% block navbar %}
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            {% show_menu 0 0 0 100 "socialschools_cms/menu/menu.html" %}
+                            {% show_menu 0 1 1 100 "socialschools_cms/menu/menu_dropdown.html" %}
                         </ul>
-                        <div class="login-theme-3">
-                            {% placeholder "Login" inherit %}
-                        </div>
                     </div>
-                    {% endblock %}
+                {% endblock %}
                 </div>
             </div>
         </div>
@@ -56,6 +58,7 @@
                 <script type="text/javascript" src="{% static 'js/socialschools-cms.js' %}"></script>
                 <script type="text/javascript" src="{% static 'js/multitenant.js' %}"></script>
                 <script type="text/javascript" src="{% static 'js/theme3-topbar.js' %}"></script>
+                <script type="text/javascript" src="{% static 'js/bootstrap-hover-dropdown.min.js' %}"></script>
             {% else %}
                 <script type="text/javascript" src="{% static 'js/multitenant-cms.min.js' %}"></script>
             {% endif %}
