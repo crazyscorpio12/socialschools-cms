@@ -180,16 +180,20 @@ a {
     overflow: hidden;
 }
 
-.news-container {
+.news-container, .news-theme-3 {
     padding: 10px;
-    margin-top: -20px;
     margin-bottom: 20px;
     min-height: 400px;
     max-height: 700px;
     overflow: scroll;
-    .border-radius(0px 0px 4px 4px);
     border: 1px solid #DDDDDD;
+    .border-radius(4px);
+}
+
+.news-container {
     border-top: none;
+    .border-radius(0px 0px 4px 4px);
+    margin-top: -20px;
 }
 
 .css-well {
