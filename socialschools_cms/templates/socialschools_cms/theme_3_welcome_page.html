@@ -1,12 +1,14 @@
 {% extends "socialschools_cms/theme_3_base.html" %}
+{% load cms_tags %}
+{% load menu_tags %}
 
 {% block wrapper %}
     <div class="carousel-theme-3">
-        {% placeholder carousel %}
+        {% placeholder "carousel" %}
         <div class="carousel-theme-3-mask">
         </div>
         <div class="container">
-            {% placeholder carousel-tagline %}
+            {% placeholder "carousel-tagline" %}
         </div>
     </div>
     <div class="container">
@@ -19,7 +21,7 @@
             <div class="col-md-6">
                 <h2>Nieuws</h2>
                 <div class="news-theme-3">
-                {% placeholder news %}
+                {% placeholder "news" %}
                 </div>
             </div>
             <div class="col-md-6">
