@@ -1,10 +1,4 @@
-{% load staticfiles %}
-{% load sekizai_tags %}
-{% load menu_tags %}
-{% load i18n %}
-{% load compress %}
-{% load socialschools_tags %}
-{% load cms_tags %}
+{% load cms_tags sekizai_tags menu_tags staticfiles i18n compress socialschools_tags %}
 
 <!DOCTYPE html>
 <html>
@@ -66,6 +60,7 @@
     </head>
 
     <body class="theme-3">
+        {% cms_toolbar %}
         <div class="footer-row">
             <nav class="navbar navbar-fixed-top navbar-theme-3">
                 <div class="theme-3-login-bar">

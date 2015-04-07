@@ -3,6 +3,7 @@ import os
 
 version = '1.4.4'
 
+
 setup(
     name='socialschools-cms',
     version=version,
