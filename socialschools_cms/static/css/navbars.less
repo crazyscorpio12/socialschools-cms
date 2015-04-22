@@ -146,7 +146,7 @@
     }
   }
   .dropdown-menu > li > a {
-    line-height: 48px;
+    line-height: 36px;
     border-bottom: none !important;
     color: @themeColor;
   }
@@ -172,8 +172,9 @@
   background-repeat: no-repeat;
   background-position: center 30px;
   .school-logo {
-    height: 95px;
+    max-height: 95px;
     margin-top: -30px;
+    max-width: 200px;
   }
 }
 
@@ -195,6 +196,15 @@
 @media (min-width: 768px) and (max-width: 980px) {
   .navbar-header-theme-3 {
     padding-left: 20px;
+  }
+}
+
+@media (min-width: 981px) {
+  .navbar-header-theme-3 {
+    .logo-theme-3-expandable.logo-expanded {
+      min-width: 200px;
+      text-align: center;
+    }
   }
 }
 
