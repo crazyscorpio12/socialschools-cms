@@ -102,18 +102,21 @@
 
 /* bootstrap overrides for top navbar theme 3 */
 
-.navbar-theme-3 .container > .navbar-nav li > a {
+.navbar-theme-3 .container > .navbar-nav li > a,
+.navbar-theme-4 .container > .navbar-nav li > a, {
     background-color: @white;
     .box-shadow(none);
 }
 
 /* navbar styles for theme 3 */
 
-.navbar-theme-3 {
+.navbar-theme-3,
+.navbar-theme-4 {
   background-color: white;
   border-bottom: 1px solid #eeeeee;
   height: 109px;
-  .logo-theme-3 {
+  .logo-theme-3,
+  .logo-theme-4 {
     display: block;
   }
   .btn-navbar {
@@ -146,11 +149,12 @@
     }
   }
   .dropdown-menu > li > a {
-    line-height: 48px;
+    line-height: 36px;
     border-bottom: none !important;
     color: @themeColor;
   }
-  .theme-3-login-bar {
+  .theme-3-login-bar,
+  .theme-4-login-bar {
     text-align: right;
     border-bottom: 1px solid @grayLighter;
     color: @themeColor;
@@ -172,18 +176,33 @@
   background-repeat: no-repeat;
   background-position: center 30px;
   .school-logo {
-    height: 95px;
+    max-height: 95px;
     margin-top: -30px;
+    max-width: 200px;
   }
 }
 
+.logo-theme-4 .school-logo {
+  max-height: 80px;
+}
+
 @media (max-width: 980px) {
-  .navbar-theme-3 {
+  .navbar-theme-3,
+  .navbar-theme-4 {
     height: auto;
   }
   .navbar-header-theme-3 {
-      .logo-theme-3-expandable.logo-expanded {
-        height: 80px;
+    .logo-theme-3-expandable.logo-expanded {
+      height: 80px;
+      .school-logo {
+        height: 40px;
+        margin-top: 0px;
+      }
+    }
+  }
+  .navbar-header-theme-4 {
+    .logo-theme-4 {
+      height: 80px;
       .school-logo {
         height: 40px;
         margin-top: 0px;
@@ -195,6 +214,15 @@
 @media (min-width: 768px) and (max-width: 980px) {
   .navbar-header-theme-3 {
     padding-left: 20px;
+  }
+}
+
+@media (min-width: 981px) {
+  .navbar-header-theme-3 {
+    .logo-theme-3-expandable.logo-expanded {
+      min-width: 200px;
+      text-align: center;
+    }
   }
 }
 
@@ -214,12 +242,19 @@
   -o-transition: all 0.25s; /* Opera */
 }
 
-.login-theme-3 {
+.login-theme-3,
+.login-theme-4 {
   float: right !important;
 }
 
+.theme-3-login-bar,
+.theme-4-login-bar {
+    height: 28px;
+}
+
 @media (max-width: 980px) {
-  .navbar-theme-3 {
+  .navbar-theme-3,
+  .navbar-theme-4 {
     padding: 0px 20px;
     margin-bottom: 0px;
   }
