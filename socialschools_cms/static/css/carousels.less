@@ -2,7 +2,8 @@
 
 /* carousel styles for theme 3 */
 
-.carousel-theme-3 {
+.carousel-theme-3,
+.carousel-theme-4 {
     position: relative;
   img {
     width: 100%;
@@ -15,10 +16,6 @@
   }
 }
 
-.carousel-theme-3-tagline {
-    text-align: center;
-}
-
 .carousel-theme-3-mask {
     width: 100%;
     height: 20px;
@@ -29,7 +26,8 @@
 }
 
 @media (max-width: 767px) {
-  .carousel-theme-3 {
+  .carousel-theme-3,
+  .carousel-theme-4 {
   margin-left: -20px;
   margin-right: -20px;
   }
@@ -39,26 +37,38 @@
   .carousel-theme-3 {
     max-height: 400px;
     overflow: hidden;
-  }
-  .carousel-theme-3-tagline {
-    width: 36%;
-    position: relative;
-    bottom: 300px;
-    min-height: 300px;
-    z-index: 5;
-    float: right;
-    border-style: solid;
-    text-align: left;
-    border-width: 44px 40px 42px 45px;
-    -moz-border-image: url("img/theme-3-tagline-mask.png") 44 40 42 45 repeat;
-    -webkit-border-image: url("img/theme-3-tagline-mask.png") 44 40 42 45 repeat;
-    -o-border-image: url("img/theme-3-tagline-mask.png") 44 40 42 45 repeat;
-    border-image: url("img/theme-3-tagline-mask.png") 44 40 42 45 fill repeat;
+    .carousel-tagline {
+        width: 36%;
+        position: relative;
+        bottom: 300px;
+        min-height: 300px;
+        z-index: 5;
+        float: right;
+        border-style: solid;
+        text-align: left;
+        border-width: 44px 40px 42px 45px;
+        -moz-border-image: url("img/theme-3-tagline-mask.png") 44 40 42 45 repeat;
+        -webkit-border-image: url("img/theme-3-tagline-mask.png") 44 40 42 45 repeat;
+        -o-border-image: url("img/theme-3-tagline-mask.png") 44 40 42 45 repeat;
+        border-image: url("img/theme-3-tagline-mask.png") 44 40 42 45 fill repeat;
     }
+  }
+  .carousel-theme-4 {
+    max-height: 400px;
+    overflow: hidden;
+    .carousel-tagline {
+        position: relative;
+        z-index: 5;
+        bottom: 150px;
+        text-align: center;
+        color: @white;
+    }
+  }
 }
 
 @media (min-width: 1280px) {
-  .carousel-theme-3 {
+  .carousel-theme-3,
+  .carousel-theme-4 {
     max-height: 600px;
     overflow: hidden;
   }
