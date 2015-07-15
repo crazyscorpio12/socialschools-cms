@@ -351,8 +351,17 @@ a {
     margin-bottom: 40px;
 }
 
-.theme-3 .plugin_link {
-    display: block;
+.theme-3 {
+    .plugin_file {
+        background-color: @themeColor;
+        .border-radius(4px);
+        a {
+            display: block;
+            color: @white;
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
 }
 
 .content-theme-3 {
@@ -380,16 +389,6 @@ a {
         color: white;
         font-weight: bold;
         border-left: none !important;
-    }
-    .plugin_file {
-        background-color: @themeColor;
-        .border-radius(4px);
-        a {
-            display: block;
-            color: @white;
-            padding: 10px;
-            font-size: 16px;
-        }
     }
 }
 
