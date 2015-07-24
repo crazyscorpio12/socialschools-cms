@@ -351,8 +351,18 @@ a {
     margin-bottom: 40px;
 }
 
-.theme-3 .plugin_link {
-    display: block;
+.theme-3,
+.theme-4 {
+    .plugin_file {
+        background-color: @themeColor;
+        .border-radius(4px);
+        a {
+            display: block;
+            color: @white;
+            padding: 10px;
+            font-size: 16px;
+        }
+    }
 }
 
 .content-theme-3 {
@@ -381,18 +391,14 @@ a {
         font-weight: bold;
         border-left: none !important;
     }
-    .plugin_file {
-        background-color: @themeColor;
-        .border-radius(4px);
-        a {
-            display: block;
-            color: @white;
-            padding: 10px;
-            font-size: 16px;
-        }
-    }
 }
 
 .widgets-theme-3 {
+    padding-top: 40px;
+}
+
+/* specific styles for theme-4 */
+
+.content-theme-4 {
     padding-top: 40px;
 }
