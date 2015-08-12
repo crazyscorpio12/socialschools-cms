@@ -2,7 +2,7 @@
 
 <div class="row">
 {% for child in children %}
-        <div class="span2 item-list">
+        <div class="col-md-2 item-list">
             <a href="{{ child.get_absolute_url }}" class="main-item">{{ child.get_menu_title }}</a>
             {% for child in child.children %}
                 <a href="{{ child.get_absolute_url }}" class="sub-item">{{ child.get_menu_title }}</a>

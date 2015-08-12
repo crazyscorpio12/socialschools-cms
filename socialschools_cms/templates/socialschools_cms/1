@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8">
+        <div class="span8">
             <div class="css-content-white content-block widget-4">
                 {% include "socialschools_cms/includes/news.html" %}
             </div>
