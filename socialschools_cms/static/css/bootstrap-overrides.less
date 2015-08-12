@@ -1,9 +1,10 @@
 /* Overrides for bootstrap classes */
 
 /* overrides primary button colors to match theme */
+@black: #000000;
 
 .btn-primary {
-    .buttonBackground(@themeColor, @themeSecondary);
+    // .buttonBackground(@themeColor, @themeSecondary);
     .buttonLinkColor(@themeColor);
     &.active {
       .buttonLinkColor(@themeColor);
@@ -15,7 +16,7 @@
 }
 
 .btn-success {
-    .buttonBackground(lighten(#52b42b, 10%), #52b42b);
+    // .buttonBackground(lighten(#52b42b, 10%), #52b42b);
 }
 
 /* stacked nav for content pages in theme 1 and 2 */
@@ -46,7 +47,7 @@
 .dropdown-submenu:focus > a {
     text-decoration: none;
     color: @themeColor;
-    background: @grayLighter;
+    background: @gray-lighter;
 }
 
 // Active state
@@ -61,7 +62,7 @@
 }
 
 .navbar .nav li.dropdown.open .dropdown-toggle {
-    background-color: @grayLighter;
+    background-color: @gray-lighter;
     color: @black;
 }
 

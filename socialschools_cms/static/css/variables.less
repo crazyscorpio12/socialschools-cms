@@ -5,8 +5,8 @@
 @themeColor: #37bde7;
 @themeSecondary: darken(@themeColor, 5%);
 @themeHeader: darken(@themeColor, 20%);
-@linkColorDark: multiply(darken(@themeColor, 20%), @grayLight);
-@linkColorDarkSaturated: multiply(darken(saturate(@themeColor, 100%), 30%), @grayLight);
+@linkColorDark: multiply(darken(@themeColor, 20%), @gray-light);
+@linkColorDarkSaturated: multiply(darken(saturate(@themeColor, 100%), 30%), @gray-light);
 
 /* cms-specific */
 
@@ -45,7 +45,7 @@
 }
 
 .buttonLinkHoverColor (@a) when (lightness(@a) >= 50%) {
-  color: multiply(@grayDarker, @themeColor);
+  color: multiply(@gray-darker, @themeColor);
   text-shadow: 0 0 1px rgba(255,255,255,0.5);
 }
 

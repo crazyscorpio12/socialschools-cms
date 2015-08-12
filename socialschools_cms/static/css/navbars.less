@@ -46,7 +46,11 @@
 /* boostrap overrides for top navbar theme 1 and 2 */
 
 .navbar-inner {
-    .border-radius(0px);
+    .border-top-radius(0);
+    .border-right-radius(0);
+    .border-bottom-radius(0);
+    .border-left-radius(0);
+    // .border-radius(0px);
     border: none;
     border-bottom: 1px solid darken(@themeSecondary, 10%);
     #gradient > .vertical(@themeColor, @themeSecondary);
@@ -135,7 +139,7 @@
     font-weight: bold;
     font-size: 14px;
     &:hover {
-      background-color: @grayLighter;
+      background-color: @gray-lighter;
       color: @black;
     }
   }
@@ -145,7 +149,7 @@
     background-color: @white;
     .box-shadow(none) !important;
     &:hover {
-      background-color: @grayLighter;
+      background-color: @gray-lighter;
     }
   }
   .dropdown-menu > li > a {
@@ -156,7 +160,7 @@
   .theme-3-login-bar,
   .theme-4-login-bar {
     text-align: right;
-    border-bottom: 1px solid @grayLighter;
+    border-bottom: 1px solid @gray-lighter;
     color: @themeColor;
     font-weight: bold;
     a {
