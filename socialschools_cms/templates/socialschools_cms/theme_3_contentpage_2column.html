@@ -12,26 +12,26 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="span12 content-theme-3">
+            <div class="col-md-12 content-theme-3">
                 <div class="main-content">
-                    <div class="row-fluid">
+                    <div class="row">
                         {% if current_page.children.exists or request.current_page.level > 0 %}
-                            <div class="span4">
+                            <div class="col-md-4">
                                 <ul class="nav nav-tabs nav-stacked">
                                 {% show_menu 1 100 0 100 "socialschools_cms/menu/menu.html" %}
                                 </ul>
                             </div>
-                            <div class="span4">
+                            <div class="col-md-4">
                                 {% placeholder content_column_1 %}
                             </div>
-                            <div class="span4">
+                            <div class="col-md-4">
                                 {% placeholder content_column_2 %}
                             </div>
                         {% else %}
-                            <div class="span6">
+                            <div class="col-md-6">
                                 {% placeholder content_column_1 %}
                             </div>
-                            <div class="span6">
+                            <div class="col-md-6">
                                 {% placeholder content_column_2 %}
                             </div>
                         {% endif %}
