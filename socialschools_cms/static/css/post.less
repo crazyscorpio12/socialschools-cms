@@ -25,13 +25,20 @@ Shared styles
         width:50px;
     }
     .css-thumb {
-        .border-radius(80px);
+        .border-top-radius(80px);
+        .border-right-radius(80px);
+        .border-bottom-radius(80px);
+        .border-left-radius(80px);
     }
     img, div {
         border:2px solid @themeColor;
         border-right: 0px;
         .box-sizing(border-box);
-        .border-radius(3px 0 0 3px);
+        .border-top-radius(3px);
+        .border-right-radius(0);
+        .border-bottom-radius(0);
+        .border-left-radius(3px);
+        // .border-radius(3px 0 0 3px);
     }
 }
 
@@ -40,7 +47,10 @@ Shared styles
     width: 40px;
     color: @white;
     margin-top: 5px;
-    .border-radius(3px 0 0 3px);
+    .border-top-radius(3px);
+    .border-right-radius(0);
+    .border-bottom-radius(0);
+    .border-left-radius(3px);    
     text-align: center;
 }
 
@@ -54,7 +64,11 @@ Shared styles
 .post-label-type {
     height: 40px;
     width: 40px;
-    .border-radius(40px);
+    .border-top-radius(40px);
+    .border-right-radius(40px);
+    .border-bottom-radius(40px);
+    .border-left-radius(40px);
+    // .border-radius(40px);
     text-align: center;
     #gradient > .vertical(@themeColor, @themeSecondary);
     icon {
@@ -151,7 +165,11 @@ Shared styles
     background: fadeout(@themeColor, 95%);
     border-top: 1px solid fadeout(@themeColor, 90%);
     padding: 30px;
-    .border-radius(0 0 5px 5px);
+     .border-top-radius(0);
+    .border-right-radius(0);
+    .border-bottom-radius(5px);
+    .border-left-radius(5px);
+    // .border-radius(0 0 5px 5px);
     hr {
         margin-top: 7px;
         margin-bottom: 7px;
@@ -167,7 +185,11 @@ Shared styles
     img {
         -webkit-box-shadow: 0 0px 2px 0px rgba(0,0,0,0.3),inset 0 5px 5px rgba(0,0,0,0.5);
         box-shadow: 0 0px 2px 0px rgba(0,0,0,0.3),inset 0 5px 5px rgba(0,0,0,0.5);
-        .border-radius(120px);
+        .border-top-radius(120px);
+        .border-right-radius(120px);
+        .border-bottom-radius(120px);
+        .border-left-radius(120px);
+        // .border-radius(120px);
         width: 30px;
         height: 30px;
     }
@@ -230,7 +252,11 @@ Shared styles
     max-width: 100%;
     .box-sizing(border-box);
     margin-bottom: 10px !important;
-    .border-radius(3px 3px 0 0);
+    .border-top-radius(3px);
+    .border-right-radius(3px);
+    .border-bottom-radius(0);
+    .border-left-radius(0);
+    // .border-radius(3px 3px 0 0);
     margin-bottom: 0px;
 }
 
@@ -269,7 +295,11 @@ Shared styles
     background: lighten(@themeColor, 33%);
     border: 2px dashed @themeColor;
     text-align: center;
-    .border-radius(4px);
+    .border-top-radius(4px);
+    .border-right-radius(4px);
+    .border-bottom-radius(4px);
+    .border-left-radius(4px);
+    // .border-radius(4px);
     span {
         color: @themeColor;
     }
@@ -359,9 +389,9 @@ Shared styles
         margin-left: -21px;
     }
     .icon-cog {
-        color:@grayLighter;
+        color:@gray-lighter;
         &:hover {
-            color:@grayLight;
+            color:@gray-light;
         }
     }
 }
@@ -382,7 +412,7 @@ Shared styles
 
 .comment-field-container {
     input {
-        background: @grayLighter;
+        background: @gray-lighter;
         width: 504px;
         .box-shadow(none);
     }
@@ -391,12 +421,12 @@ Shared styles
         font-style: italic;
     }
     :-moz-placeholder { /* Firefox 18- */
-        color: @grayLight;
+        color: @gray-light;
         font-style: italic;
     }
 
     ::-moz-placeholder {  /* Firefox 19+ */
-        color: @grayLight;
+        color: @gray-light;
         font-style: italic;
     }
 
@@ -412,10 +442,10 @@ Shared styles
 
 .bb-comment-delete {
     .icon-remove {
-        color:@grayLighter;
+        color:@gray-lighter;
     }
     .icon-remove:hover {
-        color: @grayLight;
+        color: @gray-light;
     }
 }
 
@@ -444,7 +474,11 @@ Shared styles
     width: 20px;
     height: 20px;
     text-align: center;
-    border-radius: 20px;
+    .border-top-radius(20px);
+    .border-right-radius(20px);
+    .border-bottom-radius(20px);
+    .border-left-radius(20px);
+    // border-radius: 20px;
     display: inline-block;
 }
 
@@ -459,7 +493,11 @@ Shared styles
 .post-author-picture {
     height:50px;
     width: 50px;
-    .border-radius(80px);
+    .border-top-radius(80px);
+    .border-right-radius(80px);
+    .border-bottom-radius(80px);
+    .border-left-radius(80px);
+    // .border-radius(80px);
     margin-right: 10px;
 }
 

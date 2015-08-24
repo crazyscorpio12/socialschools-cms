@@ -3,14 +3,14 @@
 {% load staticfiles %}
 
 {% block wrapper%}
-    <div class="row-fluid">
-        <div class="span12">
+    <div class="row">
+        <div class="col-md-12">
             <div class="css-content-white main-content">
-                <div class="row-fluid">
-                    <div class="span5">
+                <div class="row">
+                    <div class="col-md-5">
                         {% placeholder welcome_block_left %}
                     </div>
-                    <div class="span7">
+                    <div class="col-md-7">
                         <div class="circle">
                             {% placeholder welcome_block_right %}
                         </div>
@@ -19,13 +19,13 @@
             </div>
         </div>
     </div>
-    <div class="row-fluid">
-        <div class="span8">
+    <div class="row">
+        <div class="col-md-8">
             <div class="css-content-white content-block widget-4">
                 {% include "socialschools_cms/includes/news.html" %}
             </div>
         </div>
-        <div class="span4">
+        <div class="col-md-4">
             <div class="css-content-white content-block widget-1">
                 {% placeholder widget_block_1 %}
             </div>

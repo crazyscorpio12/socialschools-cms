@@ -3,29 +3,29 @@
 {% load menu_tags %}
 
 {% block wrapper %}
-    <div class="row-fluid">
-        <div class="span9">
+    <div class="row">
+        <div class="col-md-9">
             <div class="css-content-white main-content">
             {% show_breadcrumb "socialschools_cms/menu/breadcrumb.html" %}
-                <div class="row-fluid">
+                <div class="row">
                     {% if current_page.children.exists or request.current_page.level > 0 %}
-                        <div class="span4">
+                        <div class="col-md-4">
                             <ul class="nav nav-tabs nav-stacked">
                             {% show_menu 1 100 0 100 "socialschools_cms/menu/menu.html" %}
                             </ul>
                         </div>
-                        <div class="span8">
+                        <div class="col-md-8">
                             {% placeholder content_block_1 %}
                         </div>
                     {% else %}
-                        <div class="span12">
+                        <div class="col-md-12">
                             {% placeholder content_block_1 %}
                         </div>
                     {% endif %}
                 </div>
             </div>
         </div>
-        <div class="span3">
+        <div class="col-md-3">
             <div class="css-content-white">
                 {% placeholder widget_block_1 %}
             </div>
