@@ -5,7 +5,8 @@
 
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{csrf_token}}">
 
         <title>{% page_attribute "page_title" %}</title>
@@ -70,6 +71,12 @@
                     </div>
                 </div>
                 <div class="container">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">     
+                        <span class="sr-only">Toggle navigation</span>     
+                        <span class="icon-bar"></span>     
+                        <span class="icon-bar"></span>     
+                        <span class="icon-bar"></span>     
+                    </button>
                     <div class="navbar-header navbar-header-theme-3">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <i class="btn-navbar fa fa-navicon fa-2x">
