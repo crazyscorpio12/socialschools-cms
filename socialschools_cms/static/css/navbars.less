@@ -123,15 +123,20 @@
   .logo-theme-4 {
     display: block;
   }
-  .btn-navbar {
-    color: @themeColor;
-    text-shadow: none;
-    background: none;
-    margin-top: 10px;
-    &:hover {
+  .navbar-toggle {
+    margin-top: 18px !important;
+    
+    span.icon-bar {
+      background-color: @themeColor;
+      text-shadow: none;
+      height: 4px !important;
+
+      &:hover {
       background: none;
       color: @themeColor;
     }
+    }
+
   }
   .nav > li > a {
     line-height: 50px;
