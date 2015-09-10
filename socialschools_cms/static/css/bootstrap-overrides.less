@@ -24,18 +24,15 @@
 .nav-stacked {
     li {
         a:hover {
-            background-color: fadeout(@themeColor, 95%);
+            background-color: @gray-lightest;
         }
         + li {
             margin-top: 0px;
         }
     }
     .active {
-        a {
-            background-color: fadeout(@themeColor, 95%);
-        }
         a:hover {
-            background-color: fadeout(@themeColor, 95%);
+            background-color: @gray-lightest;
         }
     }
 }
