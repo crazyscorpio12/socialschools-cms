@@ -90,7 +90,7 @@ a {
     .border-top-radius(3px);
     .border-right-radius(3px);
     .border-bottom-radius(3px);
-    .border-left-radius(3px);    
+    .border-left-radius(3px);
     border-bottom: 1px solid rgba(255,255,255, 0.4);
 }
 
@@ -440,4 +440,13 @@ a {
 
 .content-theme-4 {
     padding-top: 40px;
+}
+
+/* Shared styles for theme 3 and 4 */
+
+@media (max-width: 980px) {
+    .content-theme-3,
+    .content-theme-4 {
+        padding-top: 100px;
+    }
 }
