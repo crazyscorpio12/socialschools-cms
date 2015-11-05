@@ -42,6 +42,9 @@
     max-height: 400px;
     overflow: hidden;
     .carousel-tagline {
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 700;
+	}
         width: 36%;
         position: relative;
         bottom: 300px;
@@ -98,39 +101,6 @@
     img {
         max-width: 100%;
         position: relative;
-    }
-}
-
-/* New welcome page slider styling */
-
-.css-cmsplugin_gallery {
-    margin-bottom: 0;
-    .carousel-indicators {
-        left: 20px;
-        bottom: 20px;
-        top: inherit;
-        > li {
-            margin-right: 10px;
-            margin-left: 0;
-            height: 20px;
-            width: 20px;
-            float: left;
-            .border-top-radius(50%);
-            .border-right-radius(50%);
-            .border-bottom-radius(50%);
-            .border-left-radius(50%);
-            // .border-radius(50%);
-            opacity: 0.75;
-            background-color: greyscale(@themeColor);
-            border: 1px solid white;
-            cursor: pointer;
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-        .active {
-            background-color: @themeColor;
-        }
     }
 }
 

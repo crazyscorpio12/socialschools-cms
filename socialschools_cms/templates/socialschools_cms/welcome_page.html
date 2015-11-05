@@ -1,6 +1,6 @@
 {% extends "socialschools_cms/theme_12_base.html" %}
 {% load cms_tags %}
-{% load staticfiles %}
+{% load menu_tags %}
 
 {% block wrapper%}
     <div class="row">
@@ -12,7 +12,7 @@
                     </div>
                     <div class="col-md-7">
                         <div class="circle">
-                            {% placeholder welcome_block_right %}
+                            {% placeholder "welcome_block_right" %}
                         </div>
                     </div>
                 </div>
@@ -27,10 +27,10 @@
         </div>
         <div class="col-md-4">
             <div class="css-content-white content-block widget-1">
-                {% placeholder widget_block_1 %}
+                {% placeholder "widget_block_1" %}
             </div>
             <div class="css-content-white content-block widget-2">
-                {% placeholder widget_block_2 %}
+                {% placeholder "widget_block_2" %}
             </div>
         </div>
     </div>
