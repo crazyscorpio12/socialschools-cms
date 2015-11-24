@@ -164,3 +164,12 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['*']
 
 AWS_S3_SECURE_URLS = False
+
+THUMBNAIL_ALIASES = {
+    '': {
+        'xlarge': {'size': (1280, 800), 'crop': False},
+        'large': {'size': (1024, 768), 'crop': False},
+        # 'medium': {'size': (300, 300), 'crop': False},
+        # 'small': {'size': (300, 300), 'crop': False},
+    },
+}
